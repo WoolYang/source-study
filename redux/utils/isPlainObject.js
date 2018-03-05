@@ -1,6 +1,7 @@
 /**
- * @param {any} obj The object to inspect.
- * @returns {boolean} True if the argument appears to be a plain object.
+ * 用于检测一个参数是否为一个普通对象。
+ * @param {any} obj 要检查的对象。
+ * @returns {boolean} 如果参数是一个普通对象，则为真。
  */
 export default function isPlainObject(obj) {
   if (typeof obj !== 'object' || obj === null) return false
