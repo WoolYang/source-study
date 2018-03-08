@@ -43,7 +43,7 @@ export default function createStore(reducer, preloadedState, enhancer) {
 
   let currentReducer = reducer //初始化currentReducer为reducer
   let currentState = preloadedState //初始化currentState为preloadedState
-  let currentListeners = [] //初始化currentListeners数组
+  let currentListeners = [] //初始化currentListeners数组,即监听函数列表
   let nextListeners = currentListeners //nextListeners与currentListeners引用同一数组
   let isDispatching = false //初始化dispatch状态为false
 

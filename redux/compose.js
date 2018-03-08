@@ -1,12 +1,10 @@
 /**
- * Composes single-argument functions from right to left. The rightmost
- * function can take multiple arguments as it provides the signature for
- * the resulting composite function.
  *
- * @param {...Function} funcs The functions to compose.
- * @returns {Function} A function obtained by composing the argument functions
- * from right to left. For example, compose(f, g, h) is identical to doing
- * (...args) => f(g(h(...args))).
+ * 从右向左组合单参数函数。最右边的函数可以接受多个参数，因为它提供了签名由此产生的复合函数。
+ * 
+ * @param {...Function} funcs 组合的函数
+ * @returns {Function} 通过从右向左组合参数函数获得新函数，例如compose(f, g, h) 和 (...args) => f(g(h(...args)))是相同的。
+ * 
  */
 
 export default function compose(...funcs) {
